@@ -14,9 +14,6 @@ import com.facebook.drawee.interfaces.DraweeController;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.facebook.imagepipeline.image.ImageInfo;
 
-/**
- * Created by hungl on 23-11-2016.
- */
 
 public class WrapContentDraweeView extends SimpleDraweeView {
     // we set a listener and update the view's aspect ratio depending on the loaded image
