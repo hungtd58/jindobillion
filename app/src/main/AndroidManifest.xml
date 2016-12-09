@@ -17,7 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.CommicActivity"></activity>
+        <activity android:name=".activity.CommicActivity" />
+        <activity android:name=".activity.CurlActivity" />
     </application>
 
 </manifest>

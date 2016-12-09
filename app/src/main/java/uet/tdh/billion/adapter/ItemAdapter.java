@@ -16,7 +16,7 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 
 import uet.tdh.billion.R;
-import uet.tdh.billion.activity.CommicActivity;
+import uet.tdh.billion.activity.CurlActivity;
 import uet.tdh.billion.common.Common;
 import uet.tdh.billion.model.Item;
 
@@ -58,10 +58,20 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemHolder> {
                 .into(holder.thumbnail);
 
         holder.nameItem.setText("Jindo - Tập " + item.index);
+//        holder.itemView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(mContext, CommicActivity.class);
+//                intent.putExtra("link", item.link);
+//                intent.putExtra("page", item.page);
+//                intent.putExtra("index", item.index);
+//                mContext.startActivity(intent);
+//            }
+//        });
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(mContext, CommicActivity.class);
+                Intent intent = new Intent(mContext, CurlActivity.class);
                 intent.putExtra("link", item.link);
                 intent.putExtra("page", item.page);
                 intent.putExtra("index", item.index);
